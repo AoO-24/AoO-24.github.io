@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(119, 119, 119, 0.8);
+}
+#app {
+    width: 640px;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 10px 36px 5px rgba(0, 0, 0, 0.12);
+}
+#display {
+    overflow-wrap: break-word;
+    text-align: right;
+    width: 600px;
+    font-size: 2.8em;
+    color: white;
+    margin: 20px 0 10px;
+    /* width: 800px; */
+}
+#binary {
+    width: 360px
+}
+.binary-switch {
+    position: relative;
+    color: rgb(92, 92, 92);
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-family: monospace;
+    background-color: tran;
+    padding: 0;
+    margin: 8px -1.5px;
+    background-color: transparent;
+    text-align: center;
+}
+.binary-switch::before {
+    font-size: 0.5rem;
+    position: absolute;
+    color: rgb(157, 157, 157);
+    top: 1rem;
+}
+#i63::before {
+    content: "63";
+}
+#i55::before {
+    content: "55";
+}
+#i47::before {
+    content: "47";
+}
+#i39::before {
+    content: "39";
+}
+#i32::before {
+    content: "32";
+    right: 0;
+}
+#i31::before {
+    content: "31";
+}
+#i23::before {
+    content: "23";
+}
+#i15::before {
+    content: "15";
+}
+#i7::before {
+    content: "7";
+}
+#i0::before {
+    content: "0";
+    right: 0;
+}
+.binary-switch.hidden {
+    display: none;
+}
+.binary-switch:nth-child(4n) {
+    margin-right: 3px;
+}
+.binary-switch:nth-child(4n - 3) {
+    margin-left: 3px;
+}
+#key-array {
+    width: 100%;
+    margin: 18px 0 0;
+    display: grid;
+    grid-template-rows: repeat(6, 60px);
+    grid-template-columns: repeat(9, 11.11%);
+}
+.key {
+    border: 0.5px solid rgb(112, 112, 112);
+    background-color: rgb(94, 95, 97);
+    font-size: 1.5em;
+    font-weight: 400;
+    color: white;
+    transition: background-color 100ms ease-out, border 100ms ease-out;
+}
+.key.current {
+    border: 1px solid rgb(32, 35, 40);
+}
+.key:hover {
+    background-color: rgb(119, 119, 119);
+}
+.key:active {
+    background-color: rgb(109, 110, 111);
+}
+.key.ari {
+    background-color: rgb(183, 166, 19);
+}
+.key.ari:hover {
+    background-color: rgb(211, 194, 48);
+}
+.key.ari:active {
+    background-color: rgb(202, 184, 22);
+}
+.key.opr {
+    background-color: rgb(70, 76, 84);
+    font-weight: 200;
+}
+.key.opr:hover {
+    background-color: rgb(108, 117, 128);
+}
+.key.opr:active {
+    background-color: rgb(91, 99, 109);
+}
+.key.disabled {
+    color: #aaa;
+}
+.key.disabled:hover, .key.disabled:active {
+    background-color: rgb(94, 95, 97);
+}
+.key.span-2 {
+    grid-column: span 2;
+}
+.sw-rounded {
+    border-radius: 0 0 0 15px;
+}
+.se-rounded {
+    border-radius: 0 0 15px 0;
+}

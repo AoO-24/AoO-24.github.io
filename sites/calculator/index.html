@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="app">
+        <div id="display"></div>
+        <div id="binary">
+            <button id="i63" class="binary-switch"></button>
+            <button id="i62" class="binary-switch"></button>
+            <button id="i61" class="binary-switch"></button>
+            <button id="i60" class="binary-switch"></button>
+            <button id="i59" class="binary-switch"></button>
+            <button id="i58" class="binary-switch"></button>
+            <button id="i57" class="binary-switch"></button>
+            <button id="i56" class="binary-switch"></button>
+            <button id="i55" class="binary-switch"></button>
+            <button id="i54" class="binary-switch"></button>
+            <button id="i53" class="binary-switch"></button>
+            <button id="i52" class="binary-switch"></button>
+            <button id="i51" class="binary-switch"></button>
+            <button id="i50" class="binary-switch"></button>
+            <button id="i49" class="binary-switch"></button>
+            <button id="i48" class="binary-switch"></button>
+            <button id="i47" class="binary-switch"></button>
+            <button id="i46" class="binary-switch"></button>
+            <button id="i45" class="binary-switch"></button>
+            <button id="i44" class="binary-switch"></button>
+            <button id="i43" class="binary-switch"></button>
+            <button id="i42" class="binary-switch"></button>
+            <button id="i41" class="binary-switch"></button>
+            <button id="i40" class="binary-switch"></button>
+            <button id="i39" class="binary-switch"></button>
+            <button id="i38" class="binary-switch"></button>
+            <button id="i37" class="binary-switch"></button>
+            <button id="i36" class="binary-switch"></button>
+            <button id="i35" class="binary-switch"></button>
+            <button id="i34" class="binary-switch"></button>
+            <button id="i33" class="binary-switch"></button>
+            <button id="i32" class="binary-switch"></button>
+            <button id="i31" class="binary-switch"></button>
+            <button id="i30" class="binary-switch"></button>
+            <button id="i29" class="binary-switch"></button>
+            <button id="i28" class="binary-switch"></button>
+            <button id="i27" class="binary-switch"></button>
+            <button id="i26" class="binary-switch"></button>
+            <button id="i25" class="binary-switch"></button>
+            <button id="i24" class="binary-switch"></button>
+            <button id="i23" class="binary-switch"></button>
+            <button id="i22" class="binary-switch"></button>
+            <button id="i21" class="binary-switch"></button>
+            <button id="i20" class="binary-switch"></button>
+            <button id="i19" class="binary-switch"></button>
+            <button id="i18" class="binary-switch"></button>
+            <button id="i17" class="binary-switch"></button>
+            <button id="i16" class="binary-switch"></button>
+            <button id="i15" class="binary-switch"></button>
+            <button id="i14" class="binary-switch"></button>
+            <button id="i13" class="binary-switch"></button>
+            <button id="i12" class="binary-switch"></button>
+            <button id="i11" class="binary-switch"></button>
+            <button id="i10" class="binary-switch"></button>
+            <button id="i9" class="binary-switch"></button>
+            <button id="i8" class="binary-switch"></button>
+            <button id="i7" class="binary-switch"></button>
+            <button id="i6" class="binary-switch"></button>
+            <button id="i5" class="binary-switch"></button>
+            <button id="i4" class="binary-switch"></button>
+            <button id="i3" class="binary-switch"></button>
+            <button id="i2" class="binary-switch"></button>
+            <button id="i1" class="binary-switch"></button>
+            <button id="i0" class="binary-switch"></button>
+        </div>
+        <div id="key-array">
+            <button class="key opr" keyType="opr2" opr="and">∧</button>
+            <button class="key opr" keyType="opr2" opr="or">∨</button>
+            <button class="key opr" keyType="opr2" opr="xor">⊻</button>
+            <button class="key" keyType="num" val="13">D</button>
+            <button class="key" keyType="num" val="14">E</button>
+            <button class="key" keyType="num" val="15">F</button>
+            <button class="key opr" keyType="opr1" opr="sll">≪1</button>
+            <button class="key opr" keyType="ac">AC</button>
+            <button class="key opr" keyType="c">C</button>
+            <button class="key opr" keyType="opr2" opr="nand">nand</button>
+            <button class="key opr" keyType="opr2" opr="nor">nor</button>
+            <button class="key opr" keyType="opr2" opr="xnor">xnor</button>
+            <button class="key" keyType="num" val="10">A</button>
+            <button class="key" keyType="num" val="11">B</button>
+            <button class="key" keyType="num" val="12">C</button>
+            <button class="key opr" keyType="opr1" opr="srl">≫1</button>
+            <button class="key opr" keyType="opr1" opr="not">¬</button>
+            <button class="key opr" keyType="opr1" opr="neg">±</button>
+            <button class="key opr" keyType="opr2" opr="xorMul">xmul</button>
+            <button class="key opr" keyType="opr2" opr="xorDiv">xdiv</button>
+            <button class="key opr" keyType="opr2" opr="xorMod">xmod</button>
+            <button class="key" keyType="num" val="7">7</button>
+            <button class="key" keyType="num" val="8">8</button>
+            <button class="key" keyType="num" val="9">9</button>
+            <button class="key opr" keyType="opr1" opr="sla">sla1</button>
+            <button class="key ari" keyType="opr2t" opr="div">÷</button>
+            <button class="key ari" keyType="opr2" opr="sub">-</button>
+            <button class="key opr" keyType="opr2" opr="sll">≪</button>
+            <button class="key opr" keyType="opr2" opr="srl">≫</button>
+            <button class="key opr" keyType="switch" opr="sgn"></button>
+            <button class="key" keyType="num" val="4">4</button>
+            <button class="key" keyType="num" val="5">5</button>
+            <button class="key" keyType="num" val="6">6</button>
+            <button class="key opr" keyType="opr1" opr="sra">sra1</button>
+            <button class="key ari" keyType="opr2" opr="mul">×</button>
+            <button class="key ari" keyType="opr2" opr="add">+</button>
+            <button class="key opr" keyType="opr2" opr="sla">sla</button>
+            <button class="key opr" keyType="opr2" opr="sra">sra</button>
+            <button class="key opr" keyType="switch" opr="wordLength"></button>
+            <button class="key" keyType="num" val="1">1</button>
+            <button class="key" keyType="num" val="2">2</button>
+            <button class="key" keyType="num" val="3">3</button>
+            <button class="key opr" keyType="opr1" opr="rol">rol1</button>
+            <button class="key ari span-2" keyType="opr2t" opr="mod">MOD</button>
+            <button class="key opr sw-rounded" keyType="opr2" opr="rol">rol</button>
+            <button class="key opr" keyType="opr2" opr="ror">ror</button>
+            <button class="key opr" keyType="switch" opr="base">hex</button>
+            <button class="key" keyType="numd" val="15">FF</button>
+            <button class="key" keyType="num" val="0">0</button>
+            <button class="key" keyType="numd" val="0">00</button>
+            <button class="key opr" keyType="opr1" opr="ror">ror1</button>
+            <button class="key ari span-2 se-rounded" keyType="equ">=</button>
+        </div>
+    </div>
+</body>
+</html>

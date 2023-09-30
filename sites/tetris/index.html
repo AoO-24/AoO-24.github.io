@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Tetris</title>
+</head>
+<body>
+    <div id="app">
+        <div class="panel"></div>
+        <div id="game"></div>
+        <div class="panel">
+            <div class="scoreboard">
+                <div>High Score</div>
+                <h3 id="high-score-display">0</h3>
+                <div>Level</div>
+                <h3 id="level-display">0</h3>
+                <div>Score</div>
+                <h3 id="score-display">0</h3>
+            </div>
+            <div class="hold-piece">
+                    <div>Hold</div>
+                    <div id="h-1" class="hold hidden">
+                        <div class="block-row">
+                            <div class="block t-1"></div>
+                            <div class="block t-1"></div>
+                            <div class="block t-1"></div>
+                            <div class="block t-1"></div>
+                        </div>
+                    </div>
+                    <div id="h-2" class="hold hidden">
+                        <div class="block-row">
+                            <div class="block invisiable"></div>
+                            <div class="block invisiable"></div>
+                            <div class="block t-2"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block t-2"></div>
+                            <div class="block t-2"></div>
+                            <div class="block t-2"></div>
+                        </div>
+                    </div>
+                    <div id="h-3" class="hold hidden">
+                        <div class="block-row">
+                            <div class="block t-3"></div>
+                            <div class="block invisiable"></div>
+                            <div class="block invisiable"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block t-3"></div>
+                            <div class="block t-3"></div>
+                            <div class="block t-3"></div>
+                        </div>
+                    </div>
+                    <div id="h-4" class="hold hidden">
+                        <div class="block-row">
+                            <div class="block t-4"></div>
+                            <div class="block t-4"></div>
+                            <div class="block invisiable"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block invisiable"></div>
+                            <div class="block t-4"></div>
+                            <div class="block t-4"></div>
+                        </div>
+                    </div>
+                    <div id="h-5" class="hold hidden">
+                        <div class="block-row">
+                            <div class="block invisiable"></div>
+                            <div class="block t-5"></div>
+                            <div class="block t-5"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block t-5"></div>
+                            <div class="block t-5"></div>
+                            <div class="block invisiable"></div>
+                        </div>
+                    </div>
+                    <div id="h-6" class="hold hidden">
+                        <div class="block-row">
+                            <div class="block invisiable"></div>
+                            <div class="block t-6"></div>
+                            <div class="block invisiable"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block t-6"></div>
+                            <div class="block t-6"></div>
+                            <div class="block t-6"></div>
+                        </div>
+                    </div>
+                    <div id="h-7" class="hold hidden">
+                        <div class="block-row">
+                            <div class="block t-7"></div>
+                            <div class="block t-7"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block t-7"></div>
+                            <div class="block t-7"></div>
+                        </div>
+                    </div>
+                    <div></div>
+            </div>
+            <div class="next-piece">
+                    <div>Next Piece</div>
+                    <div id="n-1" class="next hidden">
+                        <div class="block-row">
+                            <div class="block t-1"></div>
+                            <div class="block t-1"></div>
+                            <div class="block t-1"></div>
+                            <div class="block t-1"></div>
+                        </div>
+                    </div>
+                    <div id="n-2" class="next hidden">
+                        <div class="block-row">
+                            <div class="block invisiable"></div>
+                            <div class="block invisiable"></div>
+                            <div class="block t-2"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block t-2"></div>
+                            <div class="block t-2"></div>
+                            <div class="block t-2"></div>
+                        </div>
+                    </div>
+                    <div id="n-3" class="next hidden">
+                        <div class="block-row">
+                            <div class="block t-3"></div>
+                            <div class="block invisiable"></div>
+                            <div class="block invisiable"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block t-3"></div>
+                            <div class="block t-3"></div>
+                            <div class="block t-3"></div>
+                        </div>
+                    </div>
+                    <div id="n-4" class="next hidden">
+                        <div class="block-row">
+                            <div class="block t-4"></div>
+                            <div class="block t-4"></div>
+                            <div class="block invisiable"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block invisiable"></div>
+                            <div class="block t-4"></div>
+                            <div class="block t-4"></div>
+                        </div>
+                    </div>
+                    <div id="n-5" class="next hidden">
+                        <div class="block-row">
+                            <div class="block invisiable"></div>
+                            <div class="block t-5"></div>
+                            <div class="block t-5"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block t-5"></div>
+                            <div class="block t-5"></div>
+                            <div class="block invisiable"></div>
+                        </div>
+                    </div>
+                    <div id="n-6" class="next hidden">
+                        <div class="block-row">
+                            <div class="block invisiable"></div>
+                            <div class="block t-6"></div>
+                            <div class="block invisiable"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block t-6"></div>
+                            <div class="block t-6"></div>
+                            <div class="block t-6"></div>
+                        </div>
+                    </div>
+                    <div id="n-7" class="next hidden">
+                        <div class="block-row">
+                            <div class="block t-7"></div>
+                            <div class="block t-7"></div>
+                        </div>
+                        <div class="block-row">
+                            <div class="block t-7"></div>
+                            <div class="block t-7"></div>
+                        </div>
+                    </div>
+                    <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
