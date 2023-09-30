@@ -143,7 +143,7 @@ body {
 .avatar {
     height: 100px;
     width: 100px;
-    background-image: url(assets/avatar.jpg);
+    background-image: url(assets/avatar.jpeg);
     background-clip: content-box;
     background-size: cover;
     display: flex;
