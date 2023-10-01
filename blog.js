@@ -14,7 +14,7 @@ async function handleClick() {
         await fetch(apiUri + 'blogs/unlike/' + name);
     } else {
         button.setAttribute("liked", true);
-        localStorage.setItem(name + "#liked", true);
+        localStorage.setItem(nam3e + "#liked", true);
         icon.classList.remove("fa-regular");
         icon.classList.add("fa-solid");
         like.innerHTML = parseInt(like.innerText) + 1;
