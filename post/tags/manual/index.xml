@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manual on Jiaangk Blog</title>
+    <link>https://jiaangk.github.io/tags/manual/</link>
+    <description>Recent content in Manual on Jiaangk Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Oct 2023 13:15:00 +0800</lastBuildDate><atom:link href="https://jiaangk.github.io/tags/manual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux上LaTeX开发环境的安装（及Docker）</title>
+      <link>https://jiaangk.github.io/posts/latex-with-docker/</link>
+      <pubDate>Mon, 02 Oct 2023 13:15:00 +0800</pubDate>
+      
+      <guid>https://jiaangk.github.io/posts/latex-with-docker/</guid>
+      <description>老系统烂掉了，现在又需要用$\LaTeX$写东西，Overleaf访问有时又不稳定，于是为了在本地开心愉快的编辑$\LaTeX$决定使用Docker容器的方法在本地安装一个Overleaf。
+Docker安装 简单起见，我们使用Docker官网上提供的脚本方法来安装：
+简单来说，我们只需要先通过
+wget https://get.docker.com -O get-docker.sh 再通过
+sudo sh get-docker.sh 即可安装Docker。在执行完以上命令后，运行apt list | grep docker命令（笔者使用的是Debian系统，因此默认的高级包管理器是apt，如果使用非Debian系系统需要使用其他命令），可以看到
+Docker社区版本的软件包docker-ce以及其他附带软件已经在系统里安装。同时在/etc/apt/sources.list.d/目录内，观察到已经有docker.list文件，说明已经可以用apt包管理器来管理docker的更新。
+Docker镜像 由于众所周知的原因，在国内如果直接访问Docker Hub来安装容器容易遇到速度慢、网络不稳等问题，因此需要添加国内镜像以加速：
+供应商 网址 Docker Proxy https://dockerproxy.</description>
+    </item>
+    
+  </channel>
+</rss>

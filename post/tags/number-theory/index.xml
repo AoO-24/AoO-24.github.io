@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Number Theory on Jiaangk Blog</title>
+    <link>https://jiaangk.github.io/tags/number-theory/</link>
+    <description>Recent content in Number Theory on Jiaangk Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Jul 2023 11:32:00 +0800</lastBuildDate><atom:link href="https://jiaangk.github.io/tags/number-theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RSA算法及其实现</title>
+      <link>https://jiaangk.github.io/posts/rsa-crt/</link>
+      <pubDate>Sun, 09 Jul 2023 11:32:00 +0800</pubDate>
+      
+      <guid>https://jiaangk.github.io/posts/rsa-crt/</guid>
+      <description>RSA Generation 取两个大质数 $p$ 和 $q$ ，为了安全性 $p$ 和 $q$ 长度应 大于 $2048$ 位； 设 $n = pq$； 设 $m = \phi(n) = (p-1)(q-1)$； 取 $e$，使得 $2 &amp;lt; e &amp;lt; m$且 $gcd(e, m) = 1$； 取 $d$，使得 $d \times e \equiv 1 \ (mod\ m)$； 此时，公钥为 $(n, e)$，私钥为 $(n, d)$。 Encryption 约定 $x$ 为 plaintext， $y$ 为 cyphertext。</description>
+    </item>
+    
+  </channel>
+</rss>

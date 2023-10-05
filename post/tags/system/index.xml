@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>System on Jiaangk Blog</title>
+    <link>https://jiaangk.github.io/tags/system/</link>
+    <description>Recent content in System on Jiaangk Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Aug 2023 16:00:00 +0800</lastBuildDate><atom:link href="https://jiaangk.github.io/tags/system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux系统目录备忘录</title>
+      <link>https://jiaangk.github.io/posts/linux-filesystem/</link>
+      <pubDate>Wed, 23 Aug 2023 16:00:00 +0800</pubDate>
+      
+      <guid>https://jiaangk.github.io/posts/linux-filesystem/</guid>
+      <description>Linux的系统目录构成与作为计算机启蒙所熟知的Windows系统有很大不同，以下面的系统：
+Linux version 6.1.0-11-amd64 (debian-kernel@lists.debian.org) (gcc-12 (Debian 12.2.0-14) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT_DYNAMIC Debian 6.1.38-4 (2023-08-08)
+为例，针对其中的各个目录的功能制作一个备忘录方便查询。
+boot是存放引导文件的目录，如开机时选择系统所使用的grub等，同时核心映像也存放于此，如上图的系统核心vmlinuz，以及引导程序initrd。
+dev顾名思义即device，众所周知外部设备以文件的形式存在在Linux系统中，该目录下的文件提供了可以直接操控外部设备的接口。从本质上来说，dev目录被udev所管理，借由sysfs虚拟文件系统实现老版本中devfs的功能，提供用户空间控制设备的途径。</description>
+    </item>
+    
+  </channel>
+</rss>
